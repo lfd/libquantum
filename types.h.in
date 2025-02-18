@@ -29,6 +29,10 @@
   #define COMPLEX_FLOAT @CF_TYPE@
 #endif
 
+#ifndef REAL_FLOAT
+  #define REAL_FLOAT @RF_TYPE@
+#endif
+
 #ifndef MAX_UNSIGNED
   #define MAX_UNSIGNED @MU_TYPE@
 #endif
