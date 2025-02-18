@@ -26,24 +26,6 @@
 #include "complex.h"
 #include "config.h"
 
-/* Return the real part of a complex number */
-
-float
-quantum_real(COMPLEX_FLOAT a)
-{
-  float *p = (float *) &a;
-  return p[0];
-}
-
-/* Return the imaginary part of a complex number */
-
-float
-quantum_imag(COMPLEX_FLOAT a)
-{
-  float *p = (float *) &a;
-  return p[1];
-}
-
 /* Return the complex conjugate of a complex number */
 
 COMPLEX_FLOAT
@@ -62,7 +44,7 @@ quantum_conj(COMPLEX_FLOAT a)
 float 
 quantum_prob(COMPLEX_FLOAT a)
 {
-  return (float) (a * quantum_conj(a));
+  return quantum_prob_inline(a);
 }
 
 /* Calculate e^(i * phi) */
