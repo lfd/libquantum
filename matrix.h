@@ -46,5 +46,6 @@ extern void quantum_delete_matrix(quantum_matrix *m);
 extern void quantum_print_matrix(quantum_matrix m);
 
 extern quantum_matrix quantum_mmult(quantum_matrix A, quantum_matrix B);
+extern void quantum_adjoint(quantum_matrix *m);
 
 #endif
