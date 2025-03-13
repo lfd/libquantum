@@ -42,7 +42,7 @@ int quantum_status = 0;
 float quantum_lambda = 0;
 
 float
-quantum_get_decoherence()
+quantum_get_decoherence(void)
 {
   return quantum_lambda;
 }

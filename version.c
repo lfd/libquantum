@@ -24,7 +24,7 @@
 #include "config.h"
 
 const char *
-quantum_get_version()
+quantum_get_version(void)
 {
   return PACKAGE_VERSION;
 }

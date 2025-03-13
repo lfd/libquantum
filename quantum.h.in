@@ -129,7 +129,7 @@ extern int quantum_getwidth(int n);
 
 extern double quantum_prob(COMPLEX_FLOAT a);
 
-extern float quantum_get_decoherence();
+extern float quantum_get_decoherence(void);
 extern void quantum_set_decoherence(float lambda);
 extern void quantum_decohere(quantum_reg *reg);
 
@@ -147,10 +147,10 @@ extern void quantum_print_timeop(int width, void f(quantum_reg *));
 extern void quantum_qec_encode(int type, int width, quantum_reg *reg);
 extern void quantum_qec_decode(int type, int width, quantum_reg *reg);
 
-extern const char * quantum_get_version();
+extern const char * quantum_get_version(void);
 
-extern void quantum_objcode_start();
-extern void quantum_objcode_stop();
+extern void quantum_objcode_start(void);
+extern void quantum_objcode_stop(void);
 extern int quantum_objcode_write(char *file);
 extern void quantum_objcode_run(char *file, quantum_reg *reg);
 

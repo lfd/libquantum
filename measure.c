@@ -38,7 +38,7 @@
 /* Generate a uniformly distributed random number between 0 and 1 */
 
 double 
-quantum_frand()
+quantum_frand(void)
 {
   return (double) rand() / RAND_MAX;
 }

@@ -29,7 +29,7 @@
 #include "qureg.h"
 #include "config.h"
 
-extern double quantum_frand();
+extern double quantum_frand(void);
 
 extern MAX_UNSIGNED quantum_measure(quantum_reg reg);
 extern int quantum_bmeasure(int pos, quantum_reg *reg);

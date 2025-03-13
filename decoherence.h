@@ -25,7 +25,7 @@
 
 #define __DECOHERENCE_H
 
-extern float quantum_get_decoherence();
+extern float quantum_get_decoherence(void);
 
 extern void quantum_set_decoherence(float lambda);
 
