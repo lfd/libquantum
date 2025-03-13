@@ -67,6 +67,7 @@ quantum_qec_get_status(int *ptype, int *pwidth)
 void
 quantum_qec_encode(int type, int width, quantum_reg *reg)
 {
+  (void)type;
   int i;
   float lambda;
 
@@ -105,6 +106,7 @@ quantum_qec_encode(int type, int width, quantum_reg *reg)
 void
 quantum_qec_decode(int type, int width, quantum_reg *reg)
 {
+  (void)type;
   int i, a, b;
   int swidth;
   float lambda;

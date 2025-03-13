@@ -114,7 +114,9 @@ test_sum(int compare, int width, quantum_reg *reg)
 //c_out. xlt-l and L are enablebits. See documentation
 //for further information
 
-void muxfa(int a, int  b_in, int c_in, int c_out, int xlt_l,int L, int total,quantum_reg *reg){//a,
+void muxfa(int a, int  b_in, int c_in, int c_out, int xlt_l,int L, int total,quantum_reg *reg)
+{
+  (void)total;
 
   if(a==0){//00
   quantum_toffoli(b_in,c_in,c_out, reg);
@@ -155,7 +157,9 @@ void muxfa(int a, int  b_in, int c_in, int c_out, int xlt_l,int L, int total,qua
 
 //This is just the inverse operation of the semi-quantum fulladder
 
-void muxfa_inv(int a,int  b_in,int c_in,int c_out, int xlt_l,int L,int total,quantum_reg *reg){//a,
+void muxfa_inv(int a,int  b_in,int c_in,int c_out, int xlt_l,int L,int total,quantum_reg *reg)
+{
+  (void)total;
 
   if(a==0){//00
   quantum_cnot(b_in,c_in, reg);
@@ -198,7 +202,8 @@ void muxfa_inv(int a,int  b_in,int c_in,int c_out, int xlt_l,int L,int total,qua
 //not necessary. xlt-l and L are enablebits. See
 //documentation for further information
 
-void muxha(int a,int  b_in,int c_in, int xlt_l, int L,int total,quantum_reg *reg){//a,
+void muxha(int a,int  b_in,int c_in, int xlt_l, int L,int total,quantum_reg *reg){
+  (void)total;
 
   if(a==0){//00
   quantum_cnot(b_in,c_in, reg);
@@ -226,7 +231,9 @@ void muxha(int a,int  b_in,int c_in, int xlt_l, int L,int total,quantum_reg *reg
 
 //just the inverse of the semi quantum-halfadder
 
-void muxha_inv(int a,int  b_in,int c_in, int xlt_l, int L, int total,quantum_reg *reg){//a,
+void muxha_inv(int a,int  b_in,int c_in, int xlt_l, int L, int total,quantum_reg *reg)
+{
+  (void)total;
 
   if(a==0){//00
   quantum_cnot(b_in,c_in, reg);

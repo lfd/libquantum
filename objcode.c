@@ -91,7 +91,7 @@ quantum_int2char(int j, unsigned char *buf)
 void
 quantum_double2char(double d, unsigned char *buf)
 {
-  int i;
+  unsigned int i;
   unsigned char *p = (unsigned char *) &d;
 
   for(i=0; i<sizeof(double); i++)
@@ -302,6 +302,7 @@ quantum_objcode_file(char *file)
 void
 quantum_objcode_exit(char *file)
 {
+  (void)file;
   quantum_objcode_write(0);
   quantum_objcode_stop();
 }
