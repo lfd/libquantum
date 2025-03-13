@@ -38,9 +38,9 @@ quantum_error_handler(void *f(int))
 }
 
 const char *
-quantum_strerr(int errno)
+quantum_strerr(int err)
 {
-  switch(errno)
+  switch(err)
     {
     case QUANTUM_SUCCESS:
       return "success";
@@ -74,17 +74,17 @@ quantum_strerr(int errno)
 }
 
 void
-quantum_error(int errno)
+quantum_error(int err)
 {
   void (*p)(int);
   p = quantum_error_handler(0);
   
   if(p)
-    p(errno);
+    p(err);
   else
     {
       fflush(stdout);
-      fprintf(stderr, "ERROR: %s\n", quantum_strerr(errno));
+      fprintf(stderr, "ERROR: %s\n", quantum_strerr(err));
       fflush(stderr);
 
       abort();

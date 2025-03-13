@@ -163,8 +163,8 @@ extern void quantum_delete_density_op(quantum_density_op *rho);
 extern float quantum_purity(quantum_density_op *rho);
 
 extern void *quantum_error_handler(void *f(int));
-extern const char *quantum_strerr(int errno);
-extern void quantum_error(int errno);
+extern const char *quantum_strerr(int err);
+extern void quantum_error(int err);
 
 extern void quantum_rk4(quantum_reg *reg, double t, double dt, 
 			quantum_reg H(MAX_UNSIGNED, double), int flags);
