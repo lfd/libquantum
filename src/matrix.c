@@ -26,7 +26,7 @@
 
 #include "matrix.h"
 #include "config.h"
-#include "complex.h"
+#include "qcomplex.h"
 #include "error.h"
 
 /* Statistics of the memory consumption */

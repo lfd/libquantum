@@ -26,7 +26,7 @@
 
 #include "lapack.h"
 #include "matrix.h"
-#include "complex.h"
+#include "qcomplex.h"
 #include "qureg.h"
 #include "error.h"
 #include "config.h"

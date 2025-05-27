@@ -24,7 +24,7 @@
 #include <math.h>
 #include <complex.h>
 
-#include "complex.h"
+#include "qcomplex.h"
 #include "config.h"
 
 /* Return the complex conjugate of a complex number */

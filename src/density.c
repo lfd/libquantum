@@ -28,7 +28,7 @@
 #include "qureg.h"
 #include "config.h"
 #include "matrix.h"
-#include "complex.h"
+#include "qcomplex.h"
 #include "error.h"
 
 /* Build a new density operator from multiple state vectors */

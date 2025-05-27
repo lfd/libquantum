@@ -29,7 +29,7 @@
 #include "energy.h"
 #include "qureg.h"
 #include "qtime.h"
-#include "complex.h"
+#include "qcomplex.h"
 
 extern void dstevd_(char *jobz, int *n, double *d, double *e, double *z, 
 		    int *ldz, double *work, int *lwork, int *iwork, int *liwork,

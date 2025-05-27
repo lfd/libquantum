@@ -29,7 +29,7 @@
 #include "matrix.h"
 #include "qureg.h"
 #include "config.h"
-#include "complex.h"
+#include "qcomplex.h"
 #include "objcode.h"
 #include "error.h"
 

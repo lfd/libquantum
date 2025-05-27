@@ -30,7 +30,7 @@
 #include <stdio.h>
 
 #include "qureg.h"
-#include "complex.h"
+#include "qcomplex.h"
 #include "config.h"
 #include "objcode.h"
 #include "error.h"

@@ -28,7 +28,7 @@
 
 #include "matrix.h"
 #include "defs.h"
-#include "complex.h"
+#include "qcomplex.h"
 #include "qureg.h"
 #include "decoherence.h"
 #include "qec.h"

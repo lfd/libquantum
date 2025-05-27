@@ -27,7 +27,7 @@
 
 #include "qtime.h"
 #include "qureg.h"
-#include "complex.h"
+#include "qcomplex.h"
 #include "config.h"
 
 /* Forth-order Runge-Kutta

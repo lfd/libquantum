@@ -28,7 +28,7 @@
 #include "measure.h"
 #include "qureg.h"
 #include "gates.h"
-#include "complex.h"
+#include "qcomplex.h"
 #include "error.h"
 
 /* Status of the decoherence simulation. Non-zero means enabled and
