@@ -1,13 +1,10 @@
 *.o
 *.lo
-config.h
 config.log
 config.status
 Makefile
 libquantum.la
 libtool
-quantum.h
-types.h
 .libs/
 
 # demos
