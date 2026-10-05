@@ -18,7 +18,7 @@ lib_sources = files(
 'src/omuln.c', 'src/qec.c', 'src/qft.c', 'src/qtime.c','src/qureg.c', 'src/version.c'
 )
 
-libquantum = shared_library('quantum', lib_sources,
+libquantum = both_libraries('quantum', lib_sources,
   include_directories: inc,
   dependencies: [openmp_dep],
   link_args: ['-lm', '-fPIC', '-DPIC', '-llapack'],
@@ -27,5 +27,7 @@ libquantum = shared_library('quantum', lib_sources,
   install_dir: 'lib'
 )
 
-# Install headers
+# Install headers; also stage the public header in the build directory, so
+# in-tree consumers take everything from there.
 install_headers('include/quantum.h')
+configure_file(input: 'include/quantum.h', output: 'quantum.h', copy: true)
